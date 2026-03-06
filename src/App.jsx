@@ -1527,6 +1527,28 @@ ${topFactors.length ? `Главные факторы риска:\n${topFactors}`
               </button>
             </div>
 
+            {/* ── SEO-ТЕКСТ ── */}
+            <div style={{background:"rgba(15,20,40,0.6)", border:"1px solid rgba(255,255,255,0.05)", borderRadius:16, padding:"28px 32px", marginBottom:16}}>
+              <div style={{fontSize:13, fontWeight:600, color:"#475569", marginBottom:16, textTransform:"uppercase", letterSpacing:2, textAlign:"center"}}>О калькуляторе</div>
+              <div style={{fontSize:13, color:"#334155", lineHeight:1.9}}>
+                <p style={{marginBottom:12}}>
+                  <strong style={{color:"#475569"}}>Калькулятор продолжительности жизни</strong> — это научно обоснованный инструмент для расчёта ожидаемой продолжительности жизни на основе ваших личных данных. Если вы задаётесь вопросом <em>«сколько я проживу?»</em> или <em>«сколько мне осталось жить?»</em> — этот тест даст вам статистически взвешенный ответ.
+                </p>
+                <p style={{marginBottom:12}}>
+                  В отличие от простых таблиц по стране или возрасту, наш <strong style={{color:"#475569"}}>калькулятор жизни онлайн</strong> учитывает образ жизни, питание, физическую активность, психическое здоровье, генетику и социальные факторы. Это точный <strong style={{color:"#475569"}}>прогноз продолжительности жизни по здоровью и привычкам</strong>, основанный на мета-анализах с участием миллионов людей.
+                </p>
+                <p style={{marginBottom:12}}>
+                  Наш <strong style={{color:"#475569"}}>тест на продолжительность жизни</strong> также рассчитывает биологический возраст — он может отличаться от паспортного на годы в ту или иную сторону. Биологический возраст точнее отражает реальное состояние здоровья, чем дата рождения.
+                </p>
+                <p style={{marginBottom:12}}>
+                  <em>How long will I live?</em> — one of the most searched questions online. Our <strong style={{color:"#475569"}}>life expectancy calculator</strong> goes beyond simple age and country statistics. It's a <strong style={{color:"#475569"}}>lifespan calculator with lifestyle factors</strong> — covering smoking, sleep, stress, BMI, exercise, social connections, genetics, mental health and environment. Based on peer-reviewed research from Lancet, NEJM, JAMA and WHO.
+                </p>
+                <p style={{marginBottom:0}}>
+                  Unlike a simple <em>death clock calculator</em> or <em>death calculator</em>, this tool gives you actionable insights — showing exactly which factors shorten your life and by how much. Use it as a <strong style={{color:"#475569"}}>life expectancy predictor based on habits</strong> to understand where to focus your efforts for a longer, healthier life.
+                </p>
+              </div>
+            </div>
+
             <div style={{textAlign:"center", fontSize:11, color:"#334155", paddingBottom:20}}>
               ⚠ Расчёт является статистической оценкой на основе мета-анализов популяций.<br/>
               Не является медицинским прогнозом для конкретного человека.
