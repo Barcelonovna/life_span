@@ -10,7 +10,7 @@
   <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
   <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-  <script type="text/babel">
+  <script type="text/babel" data-presets="react">
 
 
 // ── СТРАНЫ: [мужчины, женщины] ────────────────────────────────────────────────
@@ -808,7 +808,7 @@ function BarChart({ bd, labels }) {
 }
 
 // ── ГЛАВНЫЙ КОМПОНЕНТ ─────────────────────────────────────────────────────────
-export default function App() {
+function App() {
   const [bi, setBi] = useState(0);
   const [ans, setAns] = useState({});
   const [done, setDone] = useState(false);
