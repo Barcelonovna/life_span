@@ -814,7 +814,7 @@ export default function App() {
   const left = exp && age ? Math.max(0, r1(exp - age)) : null;
 
   // ── ШАРИНГ ────────────────────────────────────────────────────────
-  const CALC_URL = "https://t.me/barcelonovna"; // замените на реальный URL калькулятора
+  const CALC_URL = "https://www.howlongtolive.com"; // замените на реальный URL калькулятора
 
   function buildShareText() {
     const neg = Object.entries(bd)
