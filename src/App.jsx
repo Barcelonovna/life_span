@@ -795,7 +795,7 @@ function BarChart({ bd, labels }) {
 }
 
 // ── ГЛАВНЫЙ КОМПОНЕНТ ─────────────────────────────────────────────────────────
-export default export default function App() {
+export default function App() {
   const [bi, setBi] = useState(0);
   const [ans, setAns] = useState({});
   const [done, setDone] = useState(false);
