@@ -75,6 +75,12 @@ const REQUIRED = {
 };
 
 // ── ВОПРОСЫ ───────────────────────────────────────────────────────────────────
+// ── МЕСЯЦЫ В ПРЕДЛОЖНОМ ПАДЕЖЕ ───────────────────────────────────────────────
+const MONTHS_PP = ["январе","феврале","марте","апреле","мае","июне","июле","августе","сентябре","октябре","ноябре","декабре"];
+function formatReminderDate(d) {
+  return `в ${MONTHS_PP[d.getMonth()]} ${d.getFullYear()} г.`;
+}
+
 const BLOCKS = [
   // 0 — Демография
   { label:"Демография", icon:"🌍", qs:[
@@ -830,7 +836,7 @@ export default function App() {
 
     const sixMonths = new Date();
     sixMonths.setMonth(sixMonths.getMonth() + 6);
-    const reminderDate = sixMonths.toLocaleDateString("ru-RU", { month:"long", year:"numeric" });
+    const reminderDate = formatReminderDate(sixMonths);
 
     return `🧬 Мой результат — Калькулятор долголетия
 
@@ -1391,7 +1397,7 @@ ${topFactors.length ? `Главные факторы риска:\n${topFactors}`
                 <div style={{fontSize:12, color:"#78716c", lineHeight:1.6}}>
                   Сохраните ссылку на калькулятор и вернитесь в{" "}
                   <strong style={{color:"#fbbf24"}}>
-                    {(() => { const d = new Date(); d.setMonth(d.getMonth()+6); return d.toLocaleDateString("ru-RU",{month:"long",year:"numeric"}); })()}
+                    {(() => { const d = new Date(); d.setMonth(d.getMonth()+6); return formatReminderDate(d); })()}
                   </strong>
                   {" "}— посмотрите, как изменились цифры после ваших усилий.
                   Даже небольшие шаги за полгода дают заметный результат!
